@@ -1,0 +1,30 @@
+<h1>Transfer to another account</h1>
+<link rel="stylesheet" href="CaseStudy.css">
+
+<ul class="topnav">
+    <li class="leftnav"><a href="AccountInfo.html">Account Information</a></li>
+    <li class="leftnav"><a href="TransactionHistory.html">Transaction History</a></li>
+    <li class="leftnav"><a class="active" href="MTransfer.html">Mobile Transfer </a></li>
+    <li class="rightnav"><a href="index.html">Exit</a></li>
+</ul>
+
+
+<form action="TransferError.html"post">
+    <fieldset style="width: 20%;">
+        <legend>Balance Information</legend> 
+    <label for="recipient">Account Number:</label>
+    <br>
+    <input type="number" id="recipient" name="recipient" required>
+    <br>
+    <label for="amount">Transfer Amount:</label>
+    <br>
+    <input type="number" id="amount" name="amount" required min="1">
+    <br>
+    <label for="note">Note:</label>
+    <br>
+    <textarea id="note" name="note" rows="4" cols="20"></textarea>
+    <br>
+    <br>
+    <button type="submit">Transfer</button>
+</form>
+
